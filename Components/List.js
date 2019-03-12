@@ -7,8 +7,8 @@ export default class List extends React.Component {
     renderItem = (item, i) => {
         const {onPressItem} = this.props
         return (
-            <View style={styles.listItem}>
-                <Text key={i}>{item.doThis}</Text>
+            <View key={i} style={styles.listItem}>
+                <Text>{item.doThis}</Text>
                 <Checkbox item={item} i={i} onPressItem={onPressItem} />
             </View>
         )
