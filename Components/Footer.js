@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableHighlight } from 'react-native';
 
 export default class Footer extends React.Component {
-    render() {
+    render() { //simple footer that renders the delete button and calls removeItems function in app.js
         const {onClearItems} = this.props
         return (
             <View style={styles.container}>

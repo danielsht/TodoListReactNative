@@ -4,7 +4,7 @@ import Checkbox from './Checkbox'
 
 
 export default class List extends React.Component {
-    renderItem = (item, i) => {
+    renderItem = (item, i) => { //render list item passed to it by map.() and give it a checkbox component 
         const {onPressItem} = this.props
         return (
             <View key={i} style={styles.listItem}>
@@ -14,7 +14,7 @@ export default class List extends React.Component {
         )
     };
     
-    render() {
+    render() { //use Array.map() to send all the list items to be displayed individually 
         const {list} = this.props;
         return (
             <View style={styles.container}>
